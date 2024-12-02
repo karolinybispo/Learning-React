@@ -24,3 +24,5 @@
 
 - props eh basicamente uma comunicacao do componente pai para o componente filho
 
+
+
