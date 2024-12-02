@@ -26,3 +26,8 @@
 
 
 
+- na pasta *2_jsx* criei e iniciei um novo projeto react usando vite(ferramenta moderna e rapida para construir projetos front). Dentro do terminal integrado a pasta, siga esses comandos: 
+1. npx create-vite . : cria um novo projeto [nele voce escolhe o fremework e a variante].
+2. npm install: instala todas as dependencias listadas no arquivo package.json.
+3. npm run dev: inicia o servidor de desenvolvimento vite.
+4. a imagem img-2_jsx.png mostra tudo dito anteriormente.
