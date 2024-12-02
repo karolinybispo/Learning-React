@@ -16,4 +16,11 @@
 - quando importa componente tem que colocar no jsx para poder aparecer ao user
 - dentro do componente pai eu abro uma tag e coloco o nome do componente para poder aparwcer na tela
 
-- crio um componente (funcao), retorno um obj com jsx e exporto o componente. Onde uso o componente, importo a funcao e coloco a funcao onde quero que ela apareça, UTILIZO ESSA funcao no jsx. 
+- crio um componente (funcao), retorno um obj com jsx e exporto o componente. Onde uso o componente, importo a funcao e coloco a funcao onde quero que ela apareça, UTILIZO ESSA funcao no jsx. Componente pai importa componente filho.
+
+- exsite uma forma antiga de fazer export e import que eh usando o componente de classe. Foi colocado um exemplo, esta no arq ClassComponent.jsx
+
+- em situacoes que deseja o componente dinamico, usa-se o PROPS, que sao propriedades. O dado dinamico vai vir do argumento
+
+- props eh basicamente uma comunicacao do componente pai para o componente filho
+

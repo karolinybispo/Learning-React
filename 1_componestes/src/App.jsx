@@ -3,10 +3,16 @@
 //importei componente filho para poder usa-lo
 import FunctionalComponent from "./componentes/FunctionalComponent"
 
+//importei o componente de classe
+import ClassComponent from "./componentes/ClassComponent"
+
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
+//importando a props no componente pai
+import PropsExample from "./componentes/PropsExample"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +30,10 @@ function App() {
       <h1>Vite + React</h1>
 
       <FunctionalComponent/> {/* componente importado sendo usado */}
+      <ClassComponent />
+
+      {/* o componente pai passa a propriedade nome quando usar o PropsExample*/} 
+      <PropsExample nome="bruna" anos={33}/>
 
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
