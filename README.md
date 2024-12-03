@@ -31,3 +31,5 @@
 2. npm install: instala todas as dependencias listadas no arquivo package.json.
 3. npm run dev: inicia o servidor de desenvolvimento vite.
 4. a imagem img-2_jsx.png mostra tudo dito anteriormente.
+
+-jsx eh praticmanete o html do react
