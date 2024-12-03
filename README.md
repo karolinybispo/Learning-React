@@ -33,3 +33,5 @@
 4. a imagem img-2_jsx.png mostra tudo dito anteriormente.
 
 -jsx eh praticmanete o html do react
+
+- Eventos: basicamente as interacoes do usuario com a pg e tbm envio de formulario, redimensioar a tela, eventos em js
