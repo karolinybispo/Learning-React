@@ -35,3 +35,5 @@
 -jsx eh praticmanete o html do react
 
 - Eventos: basicamente as interacoes do usuario com a pg e tbm envio de formulario, redimensioar a tela, eventos em js
+
+- 'useeffect' da oportunidade de reagir a eventos
