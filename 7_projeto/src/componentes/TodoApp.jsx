@@ -19,24 +19,23 @@ export const TodoApp = () => {
     const [inputValue, setInputValue] = useState("");
   
     const handleSubmit = (e) => {
-        e.preventDefault;
+        e.preventDefault();
         
         if(inputValue.trim() !== ''){
             const newTodo = {
                 id: Date.now(),
-                text: inputValue
+                text: inputValue,
+                completed: false,
             }
-            setTodos((prevTodos) => [...prevTodos, newTodo])
-
+            setTodos((prevTodos) => [...prevTodos, newTodo]);
             setInputValue("");
         }
     }
 
     return (
     <div className="app-container">
-        <h1 className="title">
-            Lista de tarefas
-        </h1>
+        <h1 className="title"> Lista de tarefas </h1>
+
         {/*form para adicionar tarefas*/}
         <form onSubmit={handleSubmit} className="form-container">
 
@@ -45,7 +44,6 @@ export const TodoApp = () => {
              placeholder="adc uma terefa" 
              value={inputValue} 
             onChange={(e) => setInputValue(e.target.value)}/>
-
             <button type="submit" className="add-button">adc</button>
         </form>
 
