@@ -48,13 +48,13 @@ export const TodoApp = () => {
         </form>
 
         {/*lista de tarefas*/}
-        {todos.length === 0 && <p className="empty">nao ha tarefas</p> }
+        {todos.length === 0 && <p className="empty">Sem tarefas</p> }
 
             <ul className="todo-list">
             { todos.map((todo) => (
                 <li key={todo.id} className="todo-item"> 
                     {todo.text}
-                    <button className="delete-buton"> excluir </button>
+                    <button className="delete-button"> excluir </button>
                 </li>
             )
             )
