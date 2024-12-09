@@ -1,11 +1,12 @@
 import Titulo from "./Titulo"
-
+import Interpolacao from "./Interpolacao"
 function App() {
   
   return ( 
   <div>
       <Titulo/>
       <Titulo/>
+      <Interpolacao/>
   </div>
   )
 }
