@@ -1,8 +1,7 @@
 //importacoes
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client' //trabalha com react para poder manipular o DOM
-import './index.css'
-import App from './App.jsx'
+import App from './App.jsx' // importei o componente App e declarei ele dentro do metodo createRoot
 
 // aqui esta renderizando os compoenntes no index.html
 
