@@ -5,8 +5,10 @@ function App() {
   return ( 
   <div>
       <Titulo/>
-      <Titulo/>
+      <Interpolacao age="34" />
+      <Interpolacao lastname="bri" info={"com props de sobrenome"}/>
       <Interpolacao/>
+
   </div>
   )
 }
@@ -21,5 +23,5 @@ export default App
 //2- determinar um retorno;
 //3- exporta-la.
 
-// Explicacao:
-// nesse componente, importei outro componente.
+
+//Nesse comonente importei dois outros componentes (Interpolacao e Titulo).
