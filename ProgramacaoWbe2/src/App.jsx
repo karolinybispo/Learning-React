@@ -1,34 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+//importei a biblioteca para usar rotas
+import{BrowserRouter, Routes, Route} from "react-router-dom";
+
+
+import { Home } from "./pages/home"
+import { Contato } from "./pages/Contato";
+import { Sobre } from "./pages/Sobre";
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+         {/* Configurando o roteamento */}
+      <BrowserRouter>
+          <Routes> 
+            
+            {/* Definindo as rotas */}
+            {/*Dentro de Routes eu faço uma rota (route) */}
+            {/*Dentro de Route eu coloco a path que eh o caminho da URL, nesse caso a pg inicial (a que entramos no aplicativo, informada pelo terminal) que representamos com /. O elemento que eu quero que seja renderizado ao entrar na pg eh o Home*/}
+            <Route path="/" element={<Home/>} /> 
+            <Route path="/Sobre" element={<Sobre/>} /> 
+            <Route path="/Contato" element ={<Contato/>} > 
+
+            </Route>
+          </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 
