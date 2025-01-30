@@ -4,8 +4,8 @@ function App(){
   const message = 'oiie';
   return(
     <div>
-        <h1>ola</h1>
         <h2>{message}</h2>
+        <h3>como vai?</h3>
     </div>
   );
 }
