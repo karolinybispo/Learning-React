@@ -11,6 +11,7 @@ function App(){
     {/*  <h3>como vai?</h3>*/}
 
     <h1 className="titulo">Gerenciador de tarefas</h1>
+    <h2 className="text-red-500 text-3xl">Segundo titulo</h2>
     <AddTasks></AddTasks>
     <Tasks></Tasks>
 
