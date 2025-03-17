@@ -1,5 +1,6 @@
 import AddTasks from "./componentes/AddTasks";
 import Tasks from "./componentes/Tasks";
+import '../src/App.css'
 
 //criando primeiro componente
 function App(){
@@ -9,7 +10,7 @@ function App(){
     {/* <h2>{message}</h2>*/} 
     {/*  <h3>como vai?</h3>*/}
 
-    <h1>Gerenciador de tarefas</h1>
+    <h1 className="titulo">Gerenciador de tarefas</h1>
     <AddTasks></AddTasks>
     <Tasks></Tasks>
 
