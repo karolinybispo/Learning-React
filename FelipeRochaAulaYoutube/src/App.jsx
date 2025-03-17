@@ -6,16 +6,16 @@ import '../src/App.css'
 function App(){
   //const message = 'oiie';
   return(
-    <div>
+    <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
     {/* <h2>{message}</h2>*/} 
     {/*  <h3>como vai?</h3>*/}
 
-    <h1 className="titulo">Gerenciador de tarefas</h1>
-    <h2 className="text-red-500 text-3xl">Segundo titulo</h2>
-    <AddTasks></AddTasks>
-    <Tasks></Tasks>
-
-
+    <div className="w-[500px]">
+      <h1 className="titulo text-3xl font-bold text-center">Gerenciador de tarefas</h1>
+      <h2 className="text-red-500 text-3xl">Segundo titulo</h2>
+      <AddTasks></AddTasks>
+      <Tasks></Tasks>
+    </div>
     </div>
   );
 }
